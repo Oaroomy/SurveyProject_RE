@@ -15,8 +15,9 @@
 
 <form action="surveyProc.jsp" method="post">
 1. 탈모로 인해 스트레스를 경험한적이 있나요? <br>
-<input type="radio" name="q1" value="0" required >예
-<input type="radio" name="q1" value="1"  >아니오
+<input type="radio" name="q1" value="0" required >매우 있음
+<input type="radio" name="q1" value="1"  >약간 있음
+<input type="radio" name="q1" value="2" required >없음
 <br>
 <br>
 <br>

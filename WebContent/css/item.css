@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+#itemframe{
+	
+	width:1500px;
+	
+}
+
+.reserItem{
+	
+
+	height:150px;
+	background-color:#efefef;
+	border:1px solid #cdcdcd;
+	
+	font-weight: bolder;
+	color : #888888;
+	font-size:20pt;
+	
+	
+}
+
+.space{
+	
+	
+	background-color:white;
+	height: 10px;
+	
+}
+
+.button{
+	
+	width:100px;
+	height:100px;
+	
+	
+	
+}

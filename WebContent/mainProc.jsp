@@ -15,6 +15,42 @@
 
 <link rel="stylesheet" type="text/css" href="css/result.css">
     
+    
+    
+    <%
+		
+		
+		String path = application.getRealPath("/WEB-INF/selfChk.txt");
+		
+		
+		String result;
+
+		File file1 = new File(path);
+		FileReader fr= new FileReader(file1);
+		BufferedReader br = new BufferedReader(fr);
+		
+		
+		int count[] = new int[3];
+		
+		while(true){
+			
+			
+			result = br.readLine();
+			if(result == null) break;
+			
+			switch(result){
+			
+				case "0": count[0]++; break;
+				case "1": count[1]++; break;
+				case "2": count[2]++; break;
+			
+			}
+			
+		}
+		
+		
+		
+		%>
 
 <table width="1400px" id="result">
 	<tr>
@@ -28,55 +64,6 @@
 		<td>
 			<h3>탈모 진단 결과</h3>
 			
-		<table id="graphFrame" style=" align:center; text-align:center;">
-			<tr>
-			
-				<td>roading</td>
-				<td>roading</td>
-				<td>roading</td>
-			</tr>
-			<tr>
-				
-				
-				<%
-		
-			for(int i = 0 ; i< 3 ; i++){
-				
-			%>
-				<td>
-				<table class="graph">
-				
-				<% 
-					for(int j = 0 ; j < 10; j++){
-				
-						%>
-						
-						<tr>
-						<td style="text-align: center"> 
-						
-							<div class="cell" name=<%= j %>></div>
-						
-						</td>
-						</tr>
-						
-
-						<%
-					}
-				
-				%>
-				</table>	
-				</td>
-				<% 
-				
-			}
-		
-		%>		
-				
-				
-			
-			<tr>
-		</table>
-		
 		
 			
 		</td>
