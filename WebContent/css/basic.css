@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+
+
+body{
+	
+	align:center;
+	background-color: white;
+	
+}
+
+#frame{
+	
+	width:1500px;
+	align:center;
+	
+}
+
+#bottom{
+	
+	background-color:#eeeeee;
+	width:1500px;
+	height:100px;
+	display:inline-block;
+
+	
+}
+
+table th{
+	
+	text-align:center;
+	color:#888888;
+	font-size:30px;
+	font-weight: bolder;
+	padding-top:30px;
+	padding-bottom: 30px;
+}
+
+#menuBar{
+	
+	width:1500px;
+	height:30px;
+	background-color:black;
+	text-align:center;
+	
+	
+
+}
+
+#menuBar td{
+	
+	width:300px;
+}
+
+#menuBar a{
+
+	color:white;
+text-decoration: none;
+	
+}
+
