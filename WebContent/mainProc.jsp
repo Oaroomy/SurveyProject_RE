@@ -28,7 +28,13 @@
 		<td>
 			<h3>탈모 진단 결과</h3>
 			
-		<table id="graphFrame" style="text-align:center;">
+		<table id="graphFrame" style=" align:center; text-align:center;">
+			<tr>
+			
+				<td>roading</td>
+				<td>roading</td>
+				<td>roading</td>
+			</tr>
 			<tr>
 				
 				
@@ -38,7 +44,7 @@
 				
 			%>
 				<td>
-				<table border class="graph">
+				<table class="graph">
 				
 				<% 
 					for(int j = 0 ; j < 10; j++){
@@ -46,7 +52,11 @@
 						%>
 						
 						<tr>
-						<td> * </td>
+						<td style="text-align: center"> 
+						
+							<div class="cell" name=<%= j %>></div>
+						
+						</td>
 						</tr>
 						
 

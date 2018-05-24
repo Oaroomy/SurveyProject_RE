@@ -16,19 +16,40 @@
 
 #graphFrame{
 	
-	border:1px solid red;
+	text-align:center;
+	align:center;
+	margin:auto;
+	border-collapse: collapse; 
+	border-spacing: 0;
 
-}
+
+}http://localhost:8080/SurveyProject/reser.jsp
+
 
 .graph{
 	
-
+	text-align:center;
+	margin:auto;
 	align:center;
 	outline:0;
-	width:50px;
-	height: 20px;
-	border: 1px solid #cccccc;
+	border : 1px solid red;
 	border-collapse: collapse; 
 	border-spacing: 0;
+}	
+
+
+
+.cell{
+	
+	align:center;
+	margin-left : 50px;
+	
+	margin:auto;
+	display:inline-block;
+	
+	width:100px;
+	height:15px;
+	border-radius: 30px;
+	border:1px solid #cdcdcd;
 	
 }
