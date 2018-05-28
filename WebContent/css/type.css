@@ -1,0 +1,76 @@
+@charset "EUC-KR";
+
+
+input[type=checkbox] { 
+	
+	width:20px;
+	height:20px;
+	margin-bottom:10px;
+	
+}
+
+form{
+	
+	margin-left:50px;
+	
+	
+}
+
+#chcList{
+	
+
+	margin-left:50px;
+	width:1200px;	
+}
+
+
+
+#chcList td{
+	
+	padding-left:50px;
+	width:600px;
+	
+}
+
+
+#list{
+
+	background-color:#efefef;
+	height:350px;
+	
+}
+
+#buttonArea{
+	
+	text-align:center;
+	height: 150px;
+	
+}
+
+#submit{
+	
+	-webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+	
+	box-shadow:none;
+	color:#26547C;
+	border:5px solid #26547C;
+	border-radius:10px;
+	background-color:white;
+	font-size:20pt;
+	width:200px;
+	height:60px;
+	
+	
+	
+}
+
+#submit:hover{
+	
+	
+	color:white;
+	background-color:#26547C;
+	
+	
+}

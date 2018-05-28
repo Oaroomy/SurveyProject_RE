@@ -8,63 +8,119 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+
+<link rel="stylesheet" type="text/css" href="css/type.css">
+  
+<script>
+
+	function check(){
+		
+			
+		var flag = flase;
+		
+		var values = document.getElementsByName("list");
+		alert(values.length);
+		
+		for(var i=0 ; i < values.length ; i++){
+			
+			if(values[i].checked){
+				
+				alert(values[i].value);
+				
+			}
+			
+		}
+		
+		return flag;
+	}
+
+
+</script>
+
 </head>
 <body>
 
-<h1> 나의 두피 타입 체크하기	 </h1>
 
-총 15개의 문항에 응답해주세요. 응답후 자신의 두피 타입에 맞는 관리법을 제시합니다. <br><br><br>
+	<div style="margin-left:100px;">
+	
+	<h1> 나의 두피 타입 체크하기	 </h1>
+	<h4>총 15개의 문항에 응답해주세요. 응답후 자신의 두피 타입에 맞는 관리법을 제시합니다. (1개 이상 체크해주세요.)</h4> <br>
+	
 
-
-
-
-
-<form action="selfResult.jsp" method="post">
-
-<% 
-
-
-String filePath = application.getRealPath("/WEB-INF/type.txt");
-
-File file = new File(filePath);
-
-FileReader filereader = new FileReader(file);
-BufferedReader bufReader = new BufferedReader(filereader);
-
-String question="";
-
-int index=0;
-
-
-while(true){
+	<table id="chcList"  >
+		<tr id="list">
+			<td>
+		<form action="typeResult.jsp" method="post" >
+	
+	<% 
 	
 	
-	question = bufReader.readLine();
-	if(question == null ) break;
+	String filePath = application.getRealPath("/WEB-INF/type.txt");
+	
+	File file = new File(filePath);
+	
+	FileReader filereader = new FileReader(file);
+	BufferedReader bufReader = new BufferedReader(filereader);
+	
+	String question="";
+	
+	int index=0;
+	
+	
+	
+	while(true){
+		
+		
+		question = bufReader.readLine();
+		if(question == null ) break;
+		
+		if(index == 7){
+			
+			%>
+			
+			</td>
+			<td style="border-left:2px solid #26547C">
+			
+			<% 
+			
+		}
+		
+		%>
+		
+	<input type="checkbox" name="list" value=<%= index  %> >
+	
+		<%
+		
+		out.print(question+"<br>");
+		index++;
+	
+	}
+	
+
 	
 	%>
 	
-<input type="checkbox" name="<%=index%>">
-
-	<%
 	
-	out.print(question+"<br>");
-	index++;
+		</td>
+	</tr>
+	
+	<br>
+	
+	
+	<tr id="buttonArea">
+		<td colspan="2">
+			<input type="submit" value="완료" id="submit" onclick="return check()">
+		</td>
+	</tr>
+	</form>
+	
+		
+	</table>
+	
 
-}
-
-%>
-
-<br>
-
-<input type="submit" value="완료">
 
 
-</form>
-
-
-
-
+</div>
 
 
 

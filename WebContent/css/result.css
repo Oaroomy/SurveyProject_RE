@@ -3,8 +3,8 @@
 
 #result{
 	
-
-
+margin-top:20px;
+text-align:center;
 
 		
 }
@@ -25,10 +25,22 @@
 }
 
 
+#graphTitle{
+	
+	margin:auto;
+	margin-bottom:50px;
+	align:center;
+	width:350px;
+	color:white;
+	background-color: #26547C;
+	
+	
+}
+
 #Gframe{
 	
-	width:700px;
-	
+
+	width:500px;
 	display:inline-block;
 	text-align:center;
 	align:center;
@@ -41,7 +53,7 @@
 
 #Gframe td{
 	
-	width:230px;
+ 	width:200px;
 	
 	
 }
@@ -76,7 +88,8 @@
 	width:100px;
 	height:15px;
 	border-radius: 30px;
-	border:2px solid green;
+	background-color:#ED8B00;
+	border:2px solid #EFB22D;
 	margin:5px;
 	
 }

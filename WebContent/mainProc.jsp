@@ -32,6 +32,7 @@
 		
 		double count[] = new double[3];
 		double value[] = new double[3];
+		int cntPe[] = new int[3];
 		int cnt = 0;
 		while(true){
 			
@@ -57,15 +58,17 @@
 		
 		for( int i = 0 ; i < count.length ;i++){
 			
+			cntPe[i] = (int)count[i];
 			value[i] = Math.round((count[i]/cnt)*100);
 			count[i] = Math.round((count[i]/cnt)*100)/10;
 		}
 		
 		%>
 
-<table border width="1500px"  id="result">
-	<tr>
-		<td width="750px">
+<table  width="1400px"  id="result" align="center">
+	<tr id="list">
+
+		<td width="700px" style="border-right: 2px solid #26547C;">
 			<h3>두피 타입 결과</h3>
 		
 		
@@ -73,11 +76,21 @@
 		
 		</td>
 		
-		<td width="750px">
-			<h3>탈모 진단 결과!!</h3>
+		<td width="700px">
+		
+			<h3 id="graphTitle"> &nbsp; 탈모 진단 통계자료
+			
+			<%
+		
+			out.println("( 총 인원 :"+cnt+"명 )");
 			
 			
-			<table  align="center" width="740px" style="text-align:center" id="Gframe">
+			%>
+			&nbsp;
+			<h3>
+			
+			
+			<table   align="center" width="400px" style="text-align:center" id="Gframe">
 			
 			<tr>
 					
@@ -110,7 +123,7 @@
 							 	if(j==0){
 							 		
 							 		
-							 		out.println(value[i]+"%");
+							 		out.println(value[i]+"% ( "+cntPe[i]+"명 )");
 							 		
 							 	}
 							 

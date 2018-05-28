@@ -43,13 +43,6 @@
 		
 		</td>
 	</tr>
-	
-	<tr>
-		<td colspan="2">
-			<jsp:include page="bottom.jsp"></jsp:include>
-		</td>
-	</tr>
-
 </table>
 
 </div>
