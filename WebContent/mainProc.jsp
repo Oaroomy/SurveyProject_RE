@@ -15,7 +15,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/result.css">
     
-    
+  
     
     <%
 		
@@ -30,40 +30,120 @@
 		BufferedReader br = new BufferedReader(fr);
 		
 		
-		int count[] = new int[3];
-		
+		double count[] = new double[3];
+		double value[] = new double[3];
+		int cnt = 0;
 		while(true){
 			
 			
 			result = br.readLine();
+			
+			
 			if(result == null) break;
 			
 			switch(result){
 			
-				case "0": count[0]++; break;
-				case "1": count[1]++; break;
-				case "2": count[2]++; break;
-			
+				case "0": count[0]++; cnt++;break;
+				case "1": count[1]++; cnt++;break;
+				case "2": count[2]++; cnt++;break;
+				
 			}
+			
+			
+			
+		
 			
 		}
 		
-		
+		for( int i = 0 ; i < count.length ;i++){
+			
+			value[i] = Math.round((count[i]/cnt)*100);
+			count[i] = Math.round((count[i]/cnt)*100)/10;
+		}
 		
 		%>
 
-<table width="1400px" id="result">
+<table border width="1500px"  id="result">
 	<tr>
-		<td>
+		<td width="750px">
 			<h3>두피 타입 결과</h3>
 		
 		
+
 		
 		</td>
 		
-		<td>
-			<h3>탈모 진단 결과</h3>
+		<td width="750px">
+			<h3>탈모 진단 결과!!</h3>
 			
+			
+			<table  align="center" width="740px" style="text-align:center" id="Gframe">
+			
+			<tr>
+					
+					<%
+					
+						
+						for(int i = 0 ; i< count.length ;i++){
+							%>
+							<td>
+							
+							<%
+							
+							for(int k = 0 ; k < 10-count[i] ;k++){
+								
+								
+								%>
+								<div class="cell"></div>
+								<br>
+								
+								<% 
+							}
+							
+							
+							for(int j = 0 ; j < count[i];j++){
+							%>
+							 <div class="cell1">
+							 
+							 <%
+							 
+							 	if(j==0){
+							 		
+							 		
+							 		out.println(value[i]+"%");
+							 		
+							 	}
+							 
+							 %>
+							 
+							 
+							 </div>
+							<%
+							
+							}
+							
+							%>
+							
+							</td>
+							<%
+						}
+					
+					
+					
+					%>
+					
+					
+					
+					
+					
+				</tr>
+				<tr id="subTitle" align="center">
+					<td>안전</td>
+					<td>주의</td>
+					<td>위험</td>
+				
+				</tr>
+			</table>
 		
 			
 		</td>

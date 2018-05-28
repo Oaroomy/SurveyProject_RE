@@ -15,9 +15,8 @@
 <h1>탈모 자가진단</h1>
 
 <form action="selfResult.jsp" method="post">
+
 <% 
-
-
 
 
 String filePath = application.getRealPath("/WEB-INF/self.txt");

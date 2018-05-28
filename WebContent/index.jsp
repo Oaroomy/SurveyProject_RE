@@ -24,16 +24,13 @@
 </head>
 <body>
 
+<h1 id="mainTitle">당신도 탈모?</h1>
 
-
+<div id="inside">
 <table id="frame" width="1500px" align="center">
 
 	<tr>
-		<th colspan="2"> 당신은 탈모?</th>
-	</tr>
-
-	<tr>
-		<td colspan="2">
+		<td colspan="2" align="center">
 			<jsp:include page="top.jsp"></jsp:include>
 		</td>
 	</tr>
@@ -55,7 +52,7 @@
 
 </table>
 
-
+</div>
 
 
 

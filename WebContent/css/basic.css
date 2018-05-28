@@ -5,7 +5,29 @@
 body{
 	
 	align:center;
+	background-color: #1B3440;
+	text-align: center;
+	
+}
+
+#mainTitle{
+	
+	aligh:center;
+	color: white;
+	font-size:30pt;
+	margin:50px;
+}
+#inside{
+	
+	border:1px double white;
+	border-spacing:10px;
+	border-radius:30px;
+	display: inline-block;
+	margin:auto;
 	background-color: white;
+	width:1500px;
+	height: 800px;
+
 	
 }
 
@@ -36,26 +58,45 @@ table th{
 	padding-bottom: 30px;
 }
 
+table{
+	
+	
+	align:center;
+	
+}
+
 #menuBar{
 	
-	width:1500px;
-	height:30px;
-	background-color:black;
+	align:center;
 	text-align:center;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:20pt;
+	color:#1B3440;
+	border-top:3px solid #1B3440;
+	border-bottom : 3px solid #1B3440;
+	width:1400px;
+	height:50px;
+	text-align:center;
+	font
+	
 	
 	
 
 }
 
 #menuBar td{
-	
-	width:300px;
+	width:375px;
 }
 
 #menuBar a{
 
-	color:white;
-text-decoration: none;
+color:#1B3440;
+
+font-weight: bolder;
+text-decoration:none;
 	
 }
 

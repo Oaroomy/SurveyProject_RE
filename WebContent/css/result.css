@@ -3,19 +3,33 @@
 
 #result{
 	
-	width:1400px;
+
+
+
 		
 }
 
 #result td{
 	
-	width:700px;
+
+}
+
+
+#subTitle{
+	
+	text-align:center;
+	color:#555555;
+	font-family:"돋움";
+	font-size:15pt;
 	
 }
 
 
-#graphFrame{
+#Gframe{
 	
+	width:700px;
+	
+	display:inline-block;
 	text-align:center;
 	align:center;
 	margin:auto;
@@ -23,11 +37,18 @@
 	border-spacing: 0;
 
 
-}http://localhost:8080/SurveyProject/reser.jsp
+}
 
+#Gframe td{
+	
+	width:230px;
+	
+	
+}
 
 .graph{
 	
+	width:740px;
 	text-align:center;
 	margin:auto;
 	align:center;
@@ -38,21 +59,46 @@
 }	
 
 
+#test{
+	
+	
+	border:3px solid red;
+	
+}
+
+.cell1{
+	
+	align:center;
+	vertical-align:top;
+	text-align:center;
+	
+	display:inline-block;
+	width:100px;
+	height:15px;
+	border-radius: 30px;
+	border:2px solid green;
+	margin:5px;
+	
+}
+
 
 .cell{
 	
 	align:center;
-	margin-left : 50px;
-	
 	margin:auto;
 	display:inline-block;
+	vertical-align:top;
+	text-align:center;
 	
+	margin:5px;
 	width:100px;
 	height:15px;
 	border-radius: 30px;
 	border:1px solid #cdcdcd;
 	
 }
+
+
 
 #5ok{
 	

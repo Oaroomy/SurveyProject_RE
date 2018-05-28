@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<table id="menuBar">
+<table id="menuBar" align="center" style="text-align: center;">
 	<tr>
 		
 		<td>
@@ -27,14 +27,7 @@
 		<td>
 			<a href="self.jsp"> 탈모 자가진단</a>
 		</td>
-		
-		<td>
-			<a href="reser.jsp"> 예약상담 </a>	
-		</td>
-		
-		<td>
-			<a href="reser.jsp"> 예약조회 </a>	
-		</td>
+	
 		
 	</tr>
 	
