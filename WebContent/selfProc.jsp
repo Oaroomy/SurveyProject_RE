@@ -11,8 +11,15 @@
 </head>
 <body>
 
+<link rel="stylesheet" type="text/css" href="css/self.css">
 
+
+
+<div id="selfframe">
 <h1>탈모 자가진단</h1>
+<h4>간단한 탈모 진단과 함께 전문의 상담예약까지!</h4> <br>
+
+
 
 <form action="selfResult.jsp" method="post">
 
@@ -39,7 +46,7 @@ while(true){
 	
 	%>
 	
-<input type="checkbox" name="<%=index%>">
+<input type="checkbox" name="<%=index%>" class="checkbox">
 
 	<%
 	out.print(question+"<br>");
@@ -50,11 +57,11 @@ while(true){
 %>
 
 <br>
-
-<input type="submit" value="완료">
+<br>
+<input type="submit" value="완료" id="submit">
 
 
 </form>
-
+</div>
 </body>
 </html>

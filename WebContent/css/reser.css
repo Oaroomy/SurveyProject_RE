@@ -1,0 +1,60 @@
+@charset "EUC-KR";
+
+
+#reserFrame{
+	
+	margin:auto;
+	text-align:center;
+	border : 2px solid #dfdfdf;
+	background-color:#f0f0f0;
+	border-radius:10px;
+	width:700px;
+	height:300px;;
+	
+}
+
+
+#resertable{
+	margin-top:100px;
+	text-align:center;
+	height: 350px;
+	
+	
+}
+
+#resertr{
+	
+	font-weight:bolder;
+	font-size:30pt;
+	color:#dfdfdf;
+	height:50px;
+	
+}
+
+#reserForm{
+	
+	margin-top:50px;
+	text-align:center;
+	font-weight:bolder;
+	font-size:30pt;
+	color:#dfdfdf;
+	height:50px;
+	
+}
+
+#reserB{
+	
+	margin-top:25px;
+	width:150px;
+	height: 50px;
+	
+}
+
+input[type=text] { 
+	
+	width:400px;
+	height:50px;	
+	margin:5px;
+}
+
+

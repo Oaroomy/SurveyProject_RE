@@ -8,8 +8,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/survey.css">
 </head>
 <body>
+
+<div id=surveyFrame>
 
 <h1> 탈모 관련 설문조사 </h1>
 
@@ -44,8 +49,9 @@
 <br>
 
 
-<input type="submit" value="제출">
+<input type="submit" value="제출" id="submit" style="margin:auto; align:center;">
 
 </form>
+</div>
 </body>
 </html>

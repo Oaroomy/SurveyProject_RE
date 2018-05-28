@@ -1,0 +1,118 @@
+@charset "EUC-KR";
+
+input[type=checkbox] { 
+	
+	width:20px;
+	height:20px;
+	margin-bottom:10px;
+	
+}
+
+#selfframe{
+	
+	margin-left:100px;
+	
+	
+}
+
+
+  #selfReframe{
+	
+	
+	margin:auto;
+	margin-top:50px;
+	text-align:center;
+	border : 2px solid #dfdfdf;
+	border-radius:30px;
+	width:1000px;
+	padding-bottom: 50px;
+	
+}
+
+
+#submit{
+	
+	-webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+	
+	box-shadow:none;
+	color:#26547C;
+	border:5px solid #26547C;
+	border-radius:10px;
+	background-color:white;
+	font-size:20pt;
+	width:200px;
+	height:60px;
+	
+	
+	
+}
+
+#submit:hover{
+	
+	
+	color:white;
+	background-color:#26547C;
+	
+	
+}
+
+
+
+#button{
+	
+	-webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+	
+	box-shadow:none;
+	color:#26547C;
+	border:5px solid #26547C;
+	border-radius:10px;
+	background-color:white;
+	font-size:20pt;
+	width:200px;
+	height:60px;
+	
+	
+}
+
+
+#button:hover{
+	
+	
+	color:white;
+	background-color:#26547C;
+	
+	
+}
+
+
+#return{
+	
+	-webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+	
+	box-shadow:none;
+	color:#26547C;
+	border:5px solid #26547C;
+	border-radius:10px;
+	background-color:white;
+	font-size:20pt;
+	width:200px;
+	height:60px;
+	
+	
+}
+
+
+#return:hover{
+	
+	
+	color:white;
+	background-color:#26547C;
+	
+	
+}

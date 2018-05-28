@@ -1,0 +1,47 @@
+@charset "EUC-KR";
+
+
+#surveyFrame{
+	
+	margin-left:100px;
+	font-size:20px;
+	
+}
+
+input[type=radio] { 
+	
+	width:20px;
+	height:20px;
+	margin-bottom:10px;
+	
+}
+
+
+
+#submit{
+	
+	-webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+	
+	box-shadow:none;
+	color:#26547C;
+	border:5px solid #26547C;
+	border-radius:10px;
+	background-color:white;
+	font-size:20pt;
+	width:200px;
+	height:60px;
+	
+	
+	
+}
+
+#submit:hover{
+	
+	
+	color:white;
+	background-color:#26547C;
+	
+	
+}

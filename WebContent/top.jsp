@@ -27,6 +27,10 @@
 		<td>
 			<a href="self.jsp"> 탈모 자가진단</a>
 		</td>
+		
+		<td>
+			<a href="reserCheck.jsp"> 예약 확인 </a>
+		</td>
 	
 		
 	</tr>

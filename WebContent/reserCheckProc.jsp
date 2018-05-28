@@ -15,7 +15,7 @@
 	<tr id="resertr">
 		<td>
 		
-			상담 예약하기
+			LOGIN
 		
 		</td>
 	</tr>
@@ -24,16 +24,12 @@
 		
 			<div id="reserFrame">
 		
-			<form	action="reserOK.jsp" method="post">
-				<table   width="500px" align="center" id="reserForm">
+			<form	action="reserShow.jsp" method="post">
+				<table   width="500px" align="center" id="reserForm" style="margin-top:100px;">
+					
 					<tr>
 						<td>
-							<input type="text" name="name" placeholder="이름">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="text" name="phone" placeholder="전화번호">
+							<input type="text" placeholder="전화번호" name="phone">
 						</td>
 					</tr>
 					<tr>

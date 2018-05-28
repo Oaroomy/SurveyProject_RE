@@ -55,7 +55,9 @@
 %>
 
 
-<a href="result.jsp"> 결과확인하기 </a>
+<jsp:forward page="index.jsp">
+	<jsp:param value="result.jsp" name="CONTENTPAGE"/>
+</jsp:forward>
 
 </body>
 </html>

@@ -10,11 +10,31 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="css/self.css">
+  
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+
+
+<script>
+	
+	function resuv(){
+		
+		
+		
+	}
+	
+	function back(){
+		
+		window.location.href="main.jsp";
+		
+	}
+
+
+</script>
 </head>
 <body>
-
+<div id="selfReframe" style="text-align:center;">
 <h1>당신의 결과는?</h1>
 
 
@@ -35,9 +55,12 @@
 		
 	}
 	
+	%>
 	
 	
-	out.println("당신이 선택한 항목 수는"+ cnt+"개");
+	<h2>당신이 선택한 항목 수는 <%=" "+ cnt +"개" %></h2>
+
+<% 
 
 	String res;
 	
@@ -76,8 +99,6 @@
 		
 	
 		
-		out.println("설문완료");
-		
 		
 		
 	}catch(Exception e){
@@ -111,7 +132,7 @@
 	
 	if(res.equals(index)){
 		
-		out.println("<br>"+result.substring(1));
+		out.println("<br> <h2>"+result.substring(1)+"</h2>");
 		break;
 		
 	}
@@ -142,15 +163,32 @@
 		}
 		
 	}
-	
-	out.print("<br>"+count[0]+"명 <br>");
-	out.print(count[1]+"명 <br>");
-	out.print(count[2]+"명 <br>");
-	
-	
+
 
 %>
 
+<br>
+<br>
+<br>
 
+	<form action="reser.jsp" method="post">
+<%
+if( cnt > 3 ){
+
+	 %>
+		<input type="submit" id="button" value="상담 예약하기">
+		<h4> 탈모 전문의에게 상담 요청을 할 수 있습니다.</h4>
+	
+	</form>
+	<%
+}else{
+
+	 %>
+	<input type="button" id="return" value="돌아가기" onclick="back()">
+<%
+}
+
+%>
+</div>
 </body>
 </html>

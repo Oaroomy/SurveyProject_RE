@@ -74,3 +74,45 @@ form{
 	
 	
 }
+
+
+#typeCare{
+	
+	margin:auto;
+	align:center;
+	display:inline-block;
+	width:1000px;
+	border:1px solid #dfdfdf;
+	
+}
+
+
+#selfReframe{
+	
+	margin-left:100px;
+	
+}
+
+h3,h2{
+	
+	color:#888888;	
+	display:inline;
+	
+	font-size:30pt;
+	
+}
+
+h2{ color:#ED8B00;}
+
+
+.careText{
+	
+	width:1000px;
+	border:2px solid #999999;
+	border-radius: 20px;
+	
+	
+}
+
+
+
