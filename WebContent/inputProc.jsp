@@ -45,8 +45,7 @@
 	
 	
 	
-		pw.printf(q1+"/"+q2+"/"+q3+"/");
-
+		pw.print(q1+"/"+q2+"/"+q3+"/");
 
 		bw.newLine();
 		pw.flush();

@@ -1,6 +1,8 @@
 <%@page import="java.io.File"%>
 <%@page import="java.io.BufferedReader"%>
 <%@page import="java.io.FileReader"%>
+<%@page import="java.io.InputStreamReader"%>
+<%@page import="java.io.FileInputStream"%>
 <%@page import="java.io.FileWriter" %>
 <%@page import="java.io.FileWriter"%>
 <%@page import="java.io.BufferedWriter"%>
@@ -113,8 +115,9 @@
 	
 	File file = new File(filePath);
 	FileReader filereader = new FileReader(file);
-	BufferedReader bufReader = new BufferedReader(filereader);
-	
+	//BufferedReader bufReader = new BufferedReader(filereader);
+	BufferedReader bufReader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"utf-8"));
+
 	
 
 	String result;

@@ -30,7 +30,7 @@
 	<input type="radio" name="q4" value="0"> 예
 	<input type="radio" name="q4" value="1"> 아니오
 
-	
+	<input type="submit" >
 
 	</form>
 

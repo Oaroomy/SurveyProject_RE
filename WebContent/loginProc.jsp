@@ -47,7 +47,7 @@
 		if(id.equals(adminId) && password.equals(adminPw)){
 			
 			out.println("관리자 계정입니다.");
-			chk=true;
+			chk = true;
 			break;
 			
 		}
@@ -57,7 +57,7 @@
 		
 				
 				 out.println(infoArray[1]+"로그인성공");	
-				 chk=true;
+				 chk = true;
 				 break;
 				
 				 
